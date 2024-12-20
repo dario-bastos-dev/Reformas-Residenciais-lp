@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reformas Residenciais | Transforme sua casa em um novo lar</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/css/style.css" />
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -50,17 +51,29 @@
           </ul>
           <a href="#contato" class="cta-button">SOLICITAR ORÇAMENTO GRÁTIS</a>
         </div>
-        <div class="hero-image">
-          <img
-            src="./src/img/sala-antes.jpg"
-            alt="Sala antes da reforma"
-            class="after"
-          />
-          <img
-            src="./src/img/sala-depois.jpg"
-            alt="Sala depois da reforma"
-            class="before"
-          />
+        <!-- Carousel -->
+        <div class="hero-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img
+                src="./src/img/sala-antes.jpg"
+                alt="Sala antes da reforma"
+                class="after"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="./src/img/sala-depois.jpg"
+                alt="Sala depois da reforma"
+                class="before"
+              />
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn prev" aria-label="Anterior">❮</button>
+            <div class="carousel-dots"></div>
+            <button class="carousel-btn next" aria-label="Próximo">❯</button>
+          </div>
         </div>
       </div>
     </section>
@@ -309,5 +322,7 @@
         </div>
       </div>
     </footer>
+    <!-- JavaScript -->
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
